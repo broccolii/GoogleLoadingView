@@ -60,20 +60,44 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjK-sf-Rco">
+                                <rect key="frame" x="250" y="437" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4c3-Aw-FTY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="FcA-Nb-pnM"/>
+                                    <constraint firstAttribute="width" constant="100" id="PlG-4D-sZQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Zms-8f-dar"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="c46-Yr-xPC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="uDT-Ql-z0P"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Zms-8f-dar"/>
+                                        <exclude reference="c46-Yr-xPC"/>
+                                        <exclude reference="FcA-Nb-pnM"/>
+                                        <exclude reference="uDT-Ql-z0P"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="D2r-A2-gQS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="5OF-se-8Ju"/>
+                            <constraint firstAttribute="centerX" secondItem="qjK-sf-Rco" secondAttribute="centerX" id="Ihb-ui-eAk"/>
                             <constraint firstAttribute="centerX" secondItem="YAB-h9-thm" secondAttribute="centerX" id="Jri-ZT-1MM"/>
                             <constraint firstItem="92c-6A-Zjg" firstAttribute="top" secondItem="YAB-h9-thm" secondAttribute="bottom" constant="23" id="aJR-ca-BWc"/>
                             <constraint firstItem="YAB-h9-thm" firstAttribute="top" secondItem="D2r-A2-gQS" secondAttribute="bottom" constant="16" id="fse-qe-lLS"/>
                             <constraint firstAttribute="centerX" secondItem="92c-6A-Zjg" secondAttribute="centerX" id="mPp-S1-Hbf"/>
                             <constraint firstAttribute="centerX" secondItem="D2r-A2-gQS" secondAttribute="centerX" id="p69-B4-9QV"/>
+                            <constraint firstItem="qjK-sf-Rco" firstAttribute="top" secondItem="92c-6A-Zjg" secondAttribute="bottom" constant="47" id="wfb-Pc-3gf"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="qjK-sf-Rco" id="l5j-bJ-wkP"/>
                         <outlet property="comlexLoadingView" destination="YAB-h9-thm" id="aKF-Tz-z7x"/>
                         <outlet property="loadingView" destination="D2r-A2-gQS" id="V7a-O3-Qok"/>
+                        <outlet property="replicatorAnimationView" destination="92c-6A-Zjg" id="HiU-6L-mE0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
