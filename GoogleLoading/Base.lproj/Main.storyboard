@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoogleLoading" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2r-A2-gQS">
+                                <rect key="frame" x="250" y="51" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BtC-dW-Nvh"/>
+                                    <constraint firstAttribute="width" constant="100" id="aYc-TA-dz5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-h9-thm">
+                                <rect key="frame" x="250" y="167" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="LKi-co-vfF"/>
+                                    <constraint firstAttribute="height" constant="100" id="NpY-XE-fFz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Vdb-Md-Xrp"/>
+                                    <constraint firstAttribute="width" constant="100" id="iU5-7r-gJp"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LKi-co-vfF"/>
+                                        <exclude reference="Vdb-Md-Xrp"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92c-6A-Zjg">
+                                <rect key="frame" x="250" y="290" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="9Nk-z5-gbC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="MyG-Uc-abA"/>
+                                    <constraint firstAttribute="width" constant="100" id="Ta5-sV-3Lp"/>
+                                    <constraint firstAttribute="height" constant="100" id="kH4-Rq-b9O"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="mbp-Sm-JDM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="tZL-JL-aDg"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9Nk-z5-gbC"/>
+                                        <exclude reference="MyG-Uc-abA"/>
+                                        <exclude reference="mbp-Sm-JDM"/>
+                                        <exclude reference="tZL-JL-aDg"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="D2r-A2-gQS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="5OF-se-8Ju"/>
+                            <constraint firstAttribute="centerX" secondItem="YAB-h9-thm" secondAttribute="centerX" id="Jri-ZT-1MM"/>
+                            <constraint firstItem="92c-6A-Zjg" firstAttribute="top" secondItem="YAB-h9-thm" secondAttribute="bottom" constant="23" id="aJR-ca-BWc"/>
+                            <constraint firstItem="YAB-h9-thm" firstAttribute="top" secondItem="D2r-A2-gQS" secondAttribute="bottom" constant="16" id="fse-qe-lLS"/>
+                            <constraint firstAttribute="centerX" secondItem="92c-6A-Zjg" secondAttribute="centerX" id="mPp-S1-Hbf"/>
+                            <constraint firstAttribute="centerX" secondItem="D2r-A2-gQS" secondAttribute="centerX" id="p69-B4-9QV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="comlexLoadingView" destination="YAB-h9-thm" id="aKF-Tz-z7x"/>
+                        <outlet property="loadingView" destination="D2r-A2-gQS" id="V7a-O3-Qok"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
